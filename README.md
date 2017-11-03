@@ -1,31 +1,26 @@
 ## All things bluestreak reside here.
 
-#### How to use NodeJS
+### Using the scripts in this repository:
 
-To run any JS file locally using NodeJS, simply
+1.  Download [NodeJS](https://nodejs.org/en/) LTS
+2.  Download this repository.
+    - Developers way: Get [git](https://git-scm.com/) and do `cd c:/your/working/dir` and `git clone https://github.com/LW2904/bluestreak.git`
+    - Boring way: Download [here](https://github.com/LW2904/bluestreak/archive/master.zip), and unzip.
+3.  Move into your working directory by doing `cd x:/your/working/dir/bluestreak`, or just `cd bluestreak` if you already `cd`d earlier.
+4.  `npm i` to install all dependencies, you only need to do this once.
+5.  `node index` to run the script which will let choose the function to run.
 
-1.  Install [NodeJS](https://nodejs.org/en/) (anything above 8.0 is optimal), and install [git](https://git-scm.com/).
-2.  `cd X:/your/working/directory/`
-3.  `git clone https://github.com/LW2904/bluestreak.git`
-4.  If this is the first time starting this script, `npm i`, to download dependencies. This will only work if you also have the `package.json` file in your project directory.
-5.  `node <scriptname>`
+### Contents
 
-So, for example, if you were to want to run `activity.js`, you would simply `cd` into it's directory, and do `node activity` (obviously after having already `npm i`d once).
+#### `valid`
 
-## Contents
+Prints all members who either have an invalid tag, or none at all.
 
-I plan to expand this, but for now the scripts available are:
+#### `activity`
 
-### - `activity.js`
+Prints all members that are considered to be inactive as defined in the rules.
 
-Prints all members that are considered inactive, as defined [here](https://docs.google.com/document/d/12Boaps2E0rOaAaOxz2J1FLeD77ygEB-aKElijfVKkxg/edit#heading=h.swkror9gafa4).
+#### `statistics`
 
-Note that this performs a lot of requests in a short span of time, take care to not get [429](https://tools.ietf.org/html/rfc6585#page-3)d. _I'm working on that._
-
-### - `statistics.js`
-
-Prints some stats to console, including a ranking of the top 10 members with the most comments, a ranking by average character count, et cetera.
-
-### - `valid.js`
-
-Prints all members with an invalid tag, as defined in the rules.
+Prints general statistics based on the last 5000 comments made.
+_Note that this is backed by an API that is currently semi-broken (thanks, steam)._
