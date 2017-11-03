@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" href="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c3/c3c314d2fe355d8687aeacfc5795a865c20874ec_full.jpg">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<style>
+	</style>
+
+	<title>bluestreak</title>
+</head>
+<body>
+
+  <div id="app">
+
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+
+  <script>
+
+    const app = new Vue({
+      el: '#app',
+      data: {
+        inactive: []
+      },
+      mounted() {
+        axios.get('https://fsoc.space/api/steam/comments/103582791437945007')
+        .then(res => {
+          
+        }).catch(console.error)
+      }
+    })
+
+  </script>
+</body>
+</html>
