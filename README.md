@@ -19,8 +19,9 @@ Prints all members who either have an invalid tag, or none at all.
 #### `activity`
 
 Prints all members that are considered to be inactive as defined in the rules.
+_Note that this is backed by an API that is currently semi-broken (thanks, steam). As I will most likely not be actively working on this in the near future, if you wish to contribute to fixing this issue, please do feel free to do so [here](https://github.com/LW2904/server/blob/master/api/steam/comments/index.js)._
 
 #### `statistics`
 
 Prints general statistics based on the last 5000 comments made.
-_Note that this is backed by an API that is currently semi-broken (thanks, steam)._
+_The same note as above applies._
