@@ -1,3 +1,5 @@
+__Please note that I am no longer a member of bluestreak, and will therefore no longer update or expand this repository.__
+
 ## All things bluestreak reside here.
 
 ### Using the scripts in this repository:
